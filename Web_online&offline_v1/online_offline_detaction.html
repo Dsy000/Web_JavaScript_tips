@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+	#status{
+		background-color: #2dff08;
+	}
+	#nstatus{
+		display: block;
+		padding: 5px; 
+		text-align: center;
+	}
+
+	</style>
+</head>
+<body ononline="onFunction()" onoffline="offFunction()">
+<div id="status">
+<span id="nstatus">Online...</span>	
+</div>	
+
+<script type="text/javascript">
+
+function onFunction() {
+  document.getElementById("status").style.backgroundColor = "#2dff08";
+  document.getElementById("nstatus").innerHTML="Online..."
+}
+
+function offFunction() {
+  document.getElementById("status").style.backgroundColor = "#ff4d4d";
+  document.getElementById("nstatus").innerHTML="Offline..."
+}
+
+
+</script>
+</body>
+</html>
